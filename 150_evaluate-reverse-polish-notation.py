@@ -5,8 +5,6 @@ class Solution(object):
     def evalRPN(self, tokens):
         stack = []
         for c in tokens:
-            a = 0
-            b = 0
             if c == "+":
                 stack.append(stack.pop() + stack.pop())
             elif c == "-":
